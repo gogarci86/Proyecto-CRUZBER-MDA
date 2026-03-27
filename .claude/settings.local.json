@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA\")",
+      "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Datasets\")",
+      "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Artifacts\")",
+      "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Notebooks\")",
+      "Bash(python3:*)"
+    ]
+  }
+}
