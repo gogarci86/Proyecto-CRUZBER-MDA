@@ -1,0 +1,30 @@
+# 🎙️ Estructura para Sprint Review: "De Datos Ciegos a Inteligencia Predictiva S&OP"
+
+Esta es tu guía práctica para defender y brillar en la próxima Sprint Review dentro de 2 semanas, presentando el cierre de la **Fase 1 del Proyecto S&OP (Iteraciones 21 a 23)**. El objetivo principal es que el negocio (Directivos, Cadena de Suministro y Stakeholders) deje de pensar que esto son "números mágicos" y vea el **impacto económico real** que acabamos de conseguir.
+
+---
+
+## 🟢 Diapositiva 1: El Punto de Partida ("La Ceguera Logística")
+*   **Qué incluir:** Una gráfica sencilla mostrando cómo Cruzber históricamente guardaba facturas en lugar de "Historia Logística".
+*   **Mensaje Principal:** *"Nuestra base de datos mentía. Guardar registros solo cuando se vende algo hace que la IA piense que el tiempo no pasa. Hemos curado la ceguera cronológica de nuestro catálogo inventando el Dense Panel: Ahora sabemos, dolorosamente claro, qué semanas ganamos dinero y qué semanas nos morimos en ceros."*
+
+## 🟡 Diapositiva 2: Reinventando la Segmentación (Muerte al Método ABC)
+*   **Qué incluir:** Tabla comparativa visual del clásico ABC (basado en dinero) frente a la metodología **Syntetos-Boylan** (basada en el *CÓMO* te compran). Destaca los conceptos "Generadores de Caja Continua" (Smooth) y "Zarpazos B2B" (Lumpy).
+*   **Mensaje Principal:** *"Dejar de tratar un repuesto raro como si fuera un best-seller solo porque un mes vendimos 500 palets. La IA ya no se engaña con el dinero, sabe el comportamiento de compra psicológico exacto de cada Cliente / Artículo."*
+
+## 🔵 Diapositiva 3: El Golpe Táctico (Horizonte Estratégico a 3 Meses)
+*   **Qué incluir:** Un recorte del Gráfico de Barras que pusimos en el Cuaderno 24. El que compara el WMAPE (Error predictivo) de `Smooth / Erratic`.
+*   **Mensaje Principal:** *"Ampliamos el horizonte predictivo a donde los proveedores reales nos obligan: A 12 Semanas (3 Meses). El resultado es devastadoramente positivo. Para los Generadores de Caja (la base financiera de Cruzber), **hemos reducido el error a un 24%**. Adivinamos casi 8 de cada 10 palets que van a pedírnos en pleno estío B2B."*
+
+## 🔴 Diapositiva 4: Cauterizando el Miedo Comercial (Tweedie & Capping)
+*   **Qué incluir:** Una analogía en texto o iconos. No pongas fórnulas matemáticas. Pon un icono de un "Cisne Negro" tachado y una Lotería. Explica la Iteración 23 de forma sencilla.
+*   **Mensaje Principal:** *"Resolvimos el problema de predecir accesorios irregulares quitándole 'el miedo' al modelo. Aislamos los Cisnes Negros (pedidos extraterrestres irrepetibles) y usamos un Optimizador de Riesgos (Tweedie). Hemos rebajado el ruido general y matado el 'Stock de Seguridad Fantasma' (pedir por miedo)."*
+
+## 🟣 Diapositiva 5: El Techo de Cristal (Roadmap Siguiente Sprint)
+*   **Qué incluir:** Una valoración crítica del Data Scientist. El por qué tenemos un **8.5 / 10** en esta fase y no un 10. Listado de los dos bloqueos que tenemos: *La ausencia de datos de rotura de Stock-Out* y *El Ciclo de vida del artículo*.
+*   **Mensaje Principal:** *"El modelo es un éxito rotundo algorítmicamente, estabilizando el error logístico general entorno al ~33-34%. La IA ha sido exprimida hasta su máximo matemático, no necesita ser más lista. Lo que necesita para el próximo Sprint es oír el tic-tac temporal: Saber cuántas semanas lleva muerto un consumible (Recencia) y si está descatalogándose comercialmente por edad, para despertar el instinto final."*
+
+---
+
+> [!TIP]
+> **Consejo del Experto para la Reuniín:** Durante las presentaciones técnicas, los Directivos se desconectan con los porcentajes sueltos. **No hables solo de WMAPE**. Habla diciendo: *"Bajar el WMAPE del 36% al 24% en Smooth, significa directamente miles de euros inmovilizados en estanterías que no se fabricarán inútilmente de cara a esta primavera"*.
