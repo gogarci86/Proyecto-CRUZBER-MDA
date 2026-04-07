@@ -5,7 +5,9 @@
       "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Datasets\")",
       "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Artifacts\")",
       "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Notebooks\")",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(python)",
+      "Bash(python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 \"Notebooks/25_Intervalos_Confianza_95.ipynb\")"
     ]
   }
 }
