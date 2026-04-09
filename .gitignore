@@ -5,3 +5,6 @@
 
 # Ignorar todos los archivos CSV
 *.csv
+
+Artifacts/
+Notebooks/Legacy/
