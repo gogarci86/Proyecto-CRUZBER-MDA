@@ -7,7 +7,11 @@
       "Bash(ls -la \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA/Notebooks\")",
       "Bash(python3:*)",
       "Bash(python)",
-      "Bash(python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 \"Notebooks/25_Intervalos_Confianza_95.ipynb\")"
+      "Bash(python -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1800 \"Notebooks/25_Intervalos_Confianza_95.ipynb\")",
+      "Bash(python -c ' *)",
+      "Read(//tmp/**)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(python -m pytest tests/ -q)"
     ]
   }
 }

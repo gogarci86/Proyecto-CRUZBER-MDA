@@ -1,0 +1,78 @@
+# =========================================================================
+# CRUZBER Forecasting Pipeline — Configuración
+# =========================================================================
+
+# Rutas de datos
+data:
+  base_dir: "../Datasets"
+  internal_dir: "Datos Internos"
+  external_dir: "Datos Externos"
+  output_file: "Prediccion_SnOP_NB30_v2_PROD.xlsx"
+
+# Horizonte y validación
+forecast:
+  horizon_weeks: 12
+  lag_safety_gap: 1
+  test_year: 2024
+  train_years: [2021, 2022, 2023]
+  n_folds: 3
+  min_horizon: 1
+  eval_buffer: 12
+  seed: 42
+
+# Clasificación Syntetos-Boylan
+classification:
+  adi_threshold: 1.32
+  cv2_threshold: 0.49
+  lumpy_dead_density: 0.05
+  min_periods_stable: 52
+  min_count_stable: 10
+
+# Hiperparámetros CONGELADOS (del NB29 v2, WMAPE 34.2%)
+# NO modificar sin re-evaluar walk-forward completo
+frozen_params:
+  smooth:
+    learning_rate: 0.03335371263975617
+    depth: 4
+    l2_leaf_reg: 3.899606186393917
+    tweedie_vp: 1.2531376858279755
+    iterations: 2000
+    early_stopping_rounds: 50
+
+  hurdle_classifier:
+    learning_rate: 0.02370632154527073
+    depth: 6
+    l2_leaf_reg: 1.0230962568007054
+    iterations: 2000
+    early_stopping_rounds: 50
+
+  hurdle_regressor:
+    learning_rate: 0.01470186561533913
+    depth: 5
+    l2_leaf_reg: 8.627453815333826
+    quantile_alpha: 0.65      # Asimétrica: coste rotura >> coste sobrestock
+    iterations: 2000
+    early_stopping_rounds: 50
+
+  threshold: 0.6728160923152045  # No se usa como corte binario (Hurdle suavizado)
+
+# Feature selection Hurdle
+hurdle:
+  sample_pct: 0.35              # Fracción de SKUs para feature selection
+  fs_importance_min: 1.0        # Umbral de importancia para mantener feature
+
+# Estrategia híbrida
+strategy:
+  smooth_erratic: "ml"          # CatBoost Tweedie
+  intermittent: "selector"      # Selector por SKU (ML vs baseline vs Croston vs SBA)
+  lumpy_dead: "ma4"             # Media móvil 4 semanas
+  lumpy_sparse: "hurdle"        # Hurdle suavizado con Quantile
+
+# Croston/SBA
+croston:
+  alpha: 0.1
+  horizon: 12
+
+# Financiero
+financial:
+  coste_sobrestock_unitario: 0.50  # €/unidad de exceso
