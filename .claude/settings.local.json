@@ -11,7 +11,15 @@
       "Bash(python -c ' *)",
       "Read(//tmp/**)",
       "Bash(python -m pytest tests/ -v)",
-      "Bash(python -m pytest tests/ -q)"
+      "Bash(python -m pytest tests/ -q)",
+      "Bash(python -)",
+      "Bash(python fix_nb30v3.py)",
+      "Bash(grep -n '^ *\"cell_type\"' \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Projeto_Troncal\\\\Proyecto-CRUZBER-MDA\\\\Notebooks\\\\28_Dense_Panel_12W_Tweedie_Outliers_Optuna_FINAL.ipynb\" | grep -n \"3096:\" )",
+      "Read(//c/Users/gogar/OneDrive/Formacion Gonzalo/MDA & IA/00_Projeto_Troncal/Proyecto-CRUZBER-MDA/Notebooks/**)",
+      "Bash(awk '/^ *\"cell_type\"/ && NR <= 3096 {count++} END {print count}' \"c:\\\\Users\\\\gogar\\\\OneDrive\\\\Formacion Gonzalo\\\\MDA & IA\\\\00_Proyecto_Troncal\\\\Proyecto-CRUZBER-MDA\\\\Notebooks\\\\28_Dense_Panel_12W_Tweedie_Outliers_Optuna_FINAL.ipynb\")",
+      "Bash(python fix_find_benchmark.py)",
+      "Bash(python fix_nb30v4.py)",
+      "Bash(python fix_nb30v4b.py)"
     ]
   }
 }
